@@ -20,12 +20,13 @@ export const putDb = async (content) => {
 
     // Create a new transaction and specify the database and data privileges.
   const tx = db.transaction('jate', 'readwrite');
+  console.log(tx);
 
    // Open up the desired object store.
   const store = tx.objectStore('jate');
+  console.log(store);
   
-  await store.put(content);
-  await tx.done;
+  await store.put({ id : 1, value: content});
   console.log('Content successfully added to the database:', content);
 };
 
@@ -43,7 +44,7 @@ export const getDb = async () => {
   // Use the .getAll() method to get all data in the database.
   const allContent = await store.getAll();
   console.log('All content successfully retrieved from the database:', allContent);
-  return allContent;
+  return allContent ?.value;
 };
 
 initdb();
