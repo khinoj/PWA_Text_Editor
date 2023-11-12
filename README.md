@@ -1,12 +1,20 @@
 # Text Editor Starter Code
 
+## Table of Content
+  1. [Acceptance_Criteria](#acceptance_criteria)
+  2. [Run](#start_server)
+  3. [Badge](#badge)
+  4. [License](#license)
+  5. [Github](#github)
+  6. [Heroku](#heroku)
+
 ## User Story
 
 - AS A developer
 - I WANT to create notes or code snippets with or without an internet connection
 - SO THAT I can reliably retrieve them for later use
 
-## Acceptance Criteria
+## Acceptance_Criteria
 
 - GIVEN a text editor web application
 - WHEN I open my application in my editor
@@ -33,3 +41,18 @@
 - THEN I should have my static assets pre cached upon loading along with subsequent pages and static assets
 - WHEN I deploy to Heroku
 - THEN I should have proper build scripts for a webpack application
+
+## Start_Server
+  - To start the program I would type in the terminal npm run start or npm run start:dev
+
+## Badge
+  - ![License: MIT License](https://img.shields.io/badge/License-MIT.0-red)
+
+## License
+  - https://opensource.org/license/mit/
+
+## Repo
+  - https://github.com/khinoj/PWA_Text_Editor
+
+## Heroku
+- https://pwa-text-editor-homework-7186e595f644.herokuapp.com/
